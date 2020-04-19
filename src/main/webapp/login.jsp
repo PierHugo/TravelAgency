@@ -1,7 +1,6 @@
-<%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" %>
 <html>
 <head>
-    <title>Connexion</title>
+    <title>Log in</title>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -12,14 +11,14 @@
 <body>
 <div class="container border border-light rounded pt-5 mt-5 mb-5 pb-5">
     <div class="heading text-center pt-4">
-        <h3 class="card-title">Connexion à l'application</h3>
+        <h3 class="card-title">Log in</h3>
     </div>
     <form method="post" id="loginForm" action="LoginServlet">
         <div class="row mb-3 mt-3">
             <div class="col-12 col-lg-8 offset-lg-2">
                 <div class="md-form">
                     <input id="login" type="text" name="login" class="form-control">
-                    <label for="login">Identifiant utilisateur *</label>
+                    <label for="login">Username</label>
                 </div>
             </div>
         </div>
@@ -27,7 +26,7 @@
             <div class="col-12 col-lg-8 offset-lg-2">
                 <div class="md-form">
                     <input id="password" type="password" name="password" class="form-control">
-                    <label for="password">Mot de passe *</label>
+                    <label for="password">Password</label>
                 </div>
             </div>
         </div>
@@ -35,11 +34,11 @@
             <div class="col-6 offset-lg-2 col-lg-4 text-left">
                 <div class="custom-control custom-checkbox">
                     <input type="checkbox" class="custom-control-input" id="defaultLoginFormRemember">
-                    <label class="custom-control-label" for="defaultLoginFormRemember">Se souvenir de moi</label>
+                    <label class="custom-control-label" for="defaultLoginFormRemember">Remember me</label>
                 </div>
             </div>
             <div class="col-6 col-lg-4 text-right">
-                <a data-toggle="modal" data-target="#exampleModalPreview" href="">Mot de passe oublié ?</a>
+                <a data-toggle="modal" data-target="#exampleModalPreview" href="">Password forgotten ?</a>
             </div>
         </div>
         <div class="row">
@@ -49,13 +48,13 @@
         </div>
         <div class="row">
             <div class="col-12 col-lg-8 offset-lg-2">
-                <button class="btn btn-dark w-100" type="submit">Connexion</button>
+                <button class="btn btn-dark w-100" type="submit">Log in</button>
             </div>
         </div>
     </form>
     <div class="text-center mt-2 pb-3">
-        <p>Pas encore inscrit ?
-            <a href="register.jsp">S'enregistrer</a>
+        <p>Not loged in yet ?
+            <a href="register.jsp">Register</a>
         </p>
     </div>
 </div>
@@ -67,7 +66,7 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalPreviewLabel">Récupération de mot de passe</h5>
+                <h5 class="modal-title" id="exampleModalPreviewLabel">Forgotten password</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -76,17 +75,17 @@
                 <div class="row mb-3 mt-3">
                     <div class="col-12 col-lg-8 offset-lg-2">
                         <div class="md-form">
-                            <label for="password_forgotten">Identifiant utilisateur</label>
+                            <label for="password_forgotten">Username</label>
                             <input id="password_forgotten" type="text" name="login" class="form-control">
                         </div>
                     </div>
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-dark" formaction="PasswordForgotten" formmethod="post">Récupérer
-                    votre mot de passe
+                <button type="button" class="btn btn-dark" formaction="PasswordForgotten" formmethod="post">Recover your
+                    password
                 </button>
-                <button type="button" class="btn btn-dark" data-dismiss="modal">Fermer</button>
+                <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
             </div>
         </div>
     </div>

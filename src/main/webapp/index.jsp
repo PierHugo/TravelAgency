@@ -1,12 +1,9 @@
-<%@ page import="main.java.model.Employee" %><%--
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8" %>
-<% new Employee(); %>
+<jsp:useBean id="offerList" scope="request" class="java.util.ArrayList"/>
 <html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Page d'accueil</title>
+    <title>List of offers</title>
 
 </head>
 
@@ -14,23 +11,37 @@
 
 <body class="main-body page-content">
 <div class="container pt-5 mt-5 mb-5 pb-5 border border-light rounded">
-    <div class="col-12">
-        <table class="table table-hover table-striped text-nowrap w-100 display">
-            <thead>
-            <tr>
-                <td>Nom</td>
-                <td>Prénom</td>
-            </tr>
-            </thead>
-            <tbody>
-
-            </tbody>
-            <tfoot>
-
-            </tfoot>
-        </table>
+    <div class="heading text-center pt-4">
+        <h3 class="card-title">List of offers</h3>
     </div>
-</div>
+    <div class="row animated fadeIn">
+        <div class="col-12">
+            <table class="table table-hover table-striped text-nowrap w-100">
+                <thead>
+                <tr>
+                    <th>Destination</th>
+                    <th>Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                <c:forEach var="offer" items="${offerList}">
+                    <tr>
+                        <td>
+                            <c:out value="${offer.getDestination()}">
+                                ${offer.getDestination()}
+                            </c:out>
+                        </td>
+                        <td>
+                            <c:out value="${offer.getDescription()}">
+                                ${offer.getDescription()}
+                            </c:out>
+                        </td>
+                    </tr>
+                </c:forEach>
+                </tbody>
+            </table>
+        </div>
+    </div>
 </body>
 
 <%@include file="footer.jsp" %>

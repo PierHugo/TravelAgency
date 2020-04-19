@@ -1,3 +1,5 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" isELIgnored="false" %>
 <link href="css/style.css" rel="stylesheet">
 <link href="lib/material-design-4.7.1/css/bootstrap.min.css" rel="stylesheet">
 <link href="lib/material-design-4.7.1/css/mdb.min.css" rel="stylesheet">
@@ -8,7 +10,8 @@
 
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="">
+            <span class="fas fa-plane"></span>
             <span class="px-1">Travel Agency</span>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -19,12 +22,12 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.jsp">Page d'accueil</a>
+                    <a class="nav-link" href="index.jsp">Homepage</a>
                 </li>
             </ul>
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="login.jsp">Connexion</a>
+                    <a class="nav-link" href="login.jsp">Log in</a>
                 </li>
             </ul>
         </div>

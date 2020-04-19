@@ -1,0 +1,68 @@
+package main.java.Manager;
+
+
+import main.java.DAO.OfferDAO;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+
+public class Manager
+{
+    private static Manager manager = null;
+    private static SessionFactory sessionFactory;
+    private static Session session;
+    private static Transaction transaction;
+
+    private static OfferDAO offerDAO;
+
+    private Manager()
+    {
+        Configuration configuration = new Configuration().configure("hibernate.cfg.xml");
+        sessionFactory = configuration.buildSessionFactory();
+        session = sessionFactory.openSession();
+        transaction = null;
+
+        offerDAO = new OfferDAO();
+    }
+
+    public static void beginTransaction()
+    {
+        if (transaction == null || !transaction.isActive())
+            transaction = session.beginTransaction();
+    }
+
+    public static Manager getManager()
+    {
+        if (manager == null)
+            manager = new Manager();
+        return manager;
+    }
+
+    public static void commitTransaction()
+    {
+        transaction.commit();
+    }
+
+    public static SessionFactory getSessionFactory()
+    {
+        return sessionFactory;
+    }
+
+    public static Session getSession()
+    {
+        return session;
+    }
+
+    public static Transaction getTransaction()
+    {
+        return transaction;
+    }
+
+    public static OfferDAO getOfferDAO()
+    {
+        return offerDAO;
+    }
+
+}
+

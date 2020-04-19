@@ -1,10 +1,22 @@
 package main.java.model;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "offer")
 public class Offer
 {
+    @Id
+    @Column(name = "destination")
     private String destination;
+    @Column(name = "description")
     private String description;
+    @Column(name = "price")
     private float price;
+    @Column(name = "discount")
     private float discount;
 
     public String getDestination()
