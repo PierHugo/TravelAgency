@@ -15,8 +15,8 @@
         <!--         DB schema will be updated if needed-->
         <!--        <property name="hibernate.hbm2ddl.auto">create</property>-->
 
-        <mapping class="main.java.model.Offer"/>
-        <mapping class="main.java.model.Destination"/>
+        <mapping class="model.Offer"/>
+        <mapping class="model.Destination"/>
 
     </session-factory>
 </hibernate-configuration>

@@ -7,7 +7,7 @@
 
 </head>
 
-<%@include file="nav.jsp" %>
+<%@include file="header.jsp" %>
 <body>
 <div class="container border border-light rounded pt-5 mt-5 mb-5 pb-5">
     <div class="heading text-center pt-4">

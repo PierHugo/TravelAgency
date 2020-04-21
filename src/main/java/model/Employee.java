@@ -1,11 +1,12 @@
-package main.java.model;
+package model;
 
-public class Employee extends User
+import javax.persistence.Entity;
+import javax.persistence.Table;
+import java.io.Serializable;
+
+@Entity
+@Table(name = "Employee")
+public class Employee extends Client implements Serializable
 {
-    private int age;
-    private String address;
 
-    public Employee()
-    {
-    }
 }

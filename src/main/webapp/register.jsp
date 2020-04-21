@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
-<%@ include file="nav.jsp" %>
+<%@ include file="header.jsp" %>
 <body>
 <div class="container border-light border rounded mt-5 pt-5 mb-5 pb-5">
     <div class="heading text-center pt-4">

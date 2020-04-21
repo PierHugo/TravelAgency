@@ -1,4 +1,4 @@
-package main.java.DAOInterface;
+package DAOinterface;
 
 public interface UserDAOInterface<T> extends DAOInterface<T>
 {

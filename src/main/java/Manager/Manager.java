@@ -1,7 +1,10 @@
-package main.java.Manager;
+package manager;
 
 
-import main.java.DAO.OfferDAO;
+import DAO.AdminDAO;
+import DAO.ClientDAO;
+import DAO.EmployeeDAO;
+import DAO.OfferDAO;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -15,6 +18,9 @@ public class Manager
     private static Transaction transaction;
 
     private static OfferDAO offerDAO;
+    private static ClientDAO clientDAO;
+    private static EmployeeDAO employeeDAO;
+    private static AdminDAO adminDAO;
 
     private Manager()
     {
@@ -64,5 +70,19 @@ public class Manager
         return offerDAO;
     }
 
+    public static ClientDAO getClientDAO()
+    {
+        return clientDAO;
+    }
+
+    public static EmployeeDAO getEmployeeDAO()
+    {
+        return employeeDAO;
+    }
+
+    public static AdminDAO getAdminDAO()
+    {
+        return adminDAO;
+    }
 }
 

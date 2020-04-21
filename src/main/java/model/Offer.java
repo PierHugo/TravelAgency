@@ -1,4 +1,4 @@
-package main.java.model;
+package model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -17,7 +17,7 @@ public class Offer
     @Column(name = "price")
     private float price;
     @Column(name = "discount")
-    private float discount;
+    private String discount;
 
     public String getDestination()
     {
@@ -49,12 +49,12 @@ public class Offer
         this.price = price;
     }
 
-    public float getDiscount()
+    public String getDiscount()
     {
         return discount;
     }
 
-    public void setDiscount(float discount)
+    public void setDiscount(String discount)
     {
         this.discount = discount;
     }

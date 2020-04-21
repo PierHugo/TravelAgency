@@ -10,4 +10,9 @@
       </profile>
     </annotationProcessing>
   </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="TP1" options="-endorseddirs D:\Users\pierhugo\Documents\School\Polytech\DI4\S8\ARCHITECTURE_SI\Exam\TP1\target/endorsed" />
+    </option>
+  </component>
 </project>

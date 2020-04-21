@@ -1,7 +1,7 @@
-package main.java.servlet;
+package servlet;
 
-import main.java.Manager.Manager;
-import main.java.model.Offer;
+import manager.Manager;
+import model.Offer;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;

@@ -4,6 +4,7 @@
     <facet type="hibernate" name="Hibernate">
       <configuration>
         <datasource-map>
+          <unit-entry name="hibernate.cfg.xml" value="3fa99025-fc5b-4437-b728-d2b00fd563de" />
           <unit-entry name="resources:hibernate.cfg.xml" value="3fa99025-fc5b-4437-b728-d2b00fd563de" />
         </datasource-map>
         <naming-strategy-map />
@@ -13,8 +14,9 @@
     <facet type="jpa" name="JPA">
       <configuration>
         <setting name="validation-enabled" value="true" />
+        <setting name="provider-name" value="Hibernate" />
         <datasource-mapping>
-          <factory-entry name="TP1" />
+          <factory-entry name="TP1" value="3fa99025-fc5b-4437-b728-d2b00fd563de" />
         </datasource-mapping>
         <naming-strategy-map />
       </configuration>

@@ -2,25 +2,25 @@ package DAO;
 
 import DAOinterface.UserDAOInterface;
 import manager.Manager;
-import model.Offer;
+import model.Employee;
 
 import java.util.List;
 
-public class OfferDAO implements UserDAOInterface<Offer>
+public class EmployeeDAO implements UserDAOInterface<Employee>
 {
     @Override
-    public boolean delete(Offer entity)
+    public boolean delete(Employee entity)
     {
         return false;
     }
 
     @SuppressWarnings("unchecked")
-    public List<Offer> findAll()
+    public List<Employee> findAll()
     {
         Manager.beginTransaction();
-        List<Offer> offers = (List<Offer>) Manager.getSession().createQuery("from Offer").list();
+        List<Employee> employees = (List<Employee>) Manager.getSession().createQuery("from Employee").list();
         Manager.commitTransaction();
-        return offers;
+        return employees;
     }
 
     @Override
@@ -30,13 +30,13 @@ public class OfferDAO implements UserDAOInterface<Offer>
     }
 
     @Override
-    public boolean saveOrUpdate(Offer entity)
+    public boolean saveOrUpdate(Employee entity)
     {
         return false;
     }
 
     @Override
-    public Offer findByLoginAndPassword(String login, String password)
+    public Employee findByLoginAndPassword(String login, String password)
     {
         return null;
     }

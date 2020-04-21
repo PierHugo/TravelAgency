@@ -1,6 +1,6 @@
-package main.java.servlet;
+package servlet;
 
-import main.java.Manager.Manager;
+import manager.Manager;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;

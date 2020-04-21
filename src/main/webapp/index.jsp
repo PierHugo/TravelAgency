@@ -7,7 +7,7 @@
 
 </head>
 
-<%@include file="nav.jsp" %>
+<%@include file="header.jsp" %>
 
 <body class="main-body page-content">
 <div class="container pt-5 mt-5 mb-5 pb-5 border border-light rounded">
@@ -21,6 +21,8 @@
                 <tr>
                     <th>Destination</th>
                     <th>Description</th>
+                    <th>Price</th>
+                    <th>Discount</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -34,6 +36,16 @@
                         <td>
                             <c:out value="${offer.getDescription()}">
                                 ${offer.getDescription()}
+                            </c:out>
+                        </td>
+                        <td>
+                            <c:out value="${offer.getPrice()}">
+                                ${offer.getPrice()}
+                            </c:out>
+                        </td>
+                        <td>
+                            <c:out value="${offer.getDiscount()}">
+                                ${offer.getDiscount()}
                             </c:out>
                         </td>
                     </tr>
