@@ -1,30 +1,39 @@
 package model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "Offer")
 public class Offer
 {
+
+    /*
+        @Id
+        @Column(name="destination")
+        @GeneratedValue(generator="gen")
+        @GenericGenerator(name="gen", strategy="foreign",parameters=@Parameter(name="property", value="offer"))
+        private Destination destination;
+    */
+
     @Id
-    @Column(name = "destination")
-    private String destination;
+    @OneToOne(mappedBy = "offer")
+    private Destination destination;
+
     @Column(name = "description")
     private String description;
     @Column(name = "price")
     private float price;
-    @Column(name = "discount")
-    private String discount;
 
-    public String getDestination()
+    public Offer()
+    {
+    }
+
+    public Destination getDestination()
     {
         return destination;
     }
 
-    public void setDestination(String destination)
+    public void setDestination(Destination destination)
     {
         this.destination = destination;
     }
@@ -47,15 +56,5 @@ public class Offer
     public void setPrice(float price)
     {
         this.price = price;
-    }
-
-    public String getDiscount()
-    {
-        return discount;
-    }
-
-    public void setDiscount(String discount)
-    {
-        this.discount = discount;
     }
 }

@@ -24,6 +24,32 @@
                 <li class="nav-item">
                     <a class="nav-link" href="home">Homepage</a>
                 </li>
+                <c:if test="${sessionScope.type == 'admin'}">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                           aria-haspopup="true"
+                           aria-expanded="false">Offers</a>
+                        <div class="dropdown-menu dropdown-secondary">
+                            <form method="get" action="offer">
+                                <button class="dropdown-item" name="Offer" value="add">Add</button>
+                                <button class="dropdown-item" name="Offer" value="edit">Edit</button>
+                                <button class="dropdown-item" name="Offer" value="delete">Delete</button>
+                            </form>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                           aria-haspopup="true"
+                           aria-expanded="false">Destinations</a>
+                        <div class="dropdown-menu dropdown-secondary">
+                            <form method="get" action="destination">
+                                <button class="dropdown-item" name="Destination" value="add">Add</button>
+                                <button class="dropdown-item" name="Destination" value="edit">Edit</button>
+                                <button class="dropdown-item" name="Destination" value="delete">Delete</button>
+                            </form>
+                        </div>
+                    </li>
+                </c:if>
             </ul>
             <ul class="navbar-nav">
                 <c:choose>

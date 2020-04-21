@@ -22,7 +22,6 @@
                     <th>Destination</th>
                     <th>Description</th>
                     <th>Price</th>
-                    <th>Discount</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -43,17 +42,13 @@
                                 ${offer.getPrice()}
                             </c:out>
                         </td>
-                        <td>
-                            <c:out value="${offer.getDiscount()}">
-                                ${offer.getDiscount()}
-                            </c:out>
-                        </td>
                     </tr>
                 </c:forEach>
                 </tbody>
             </table>
         </div>
     </div>
+</div>
 </body>
 
 <%@include file="footer.jsp" %>

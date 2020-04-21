@@ -6,7 +6,11 @@ VALUES (2, 'client1', 'client1', 'client1', '5e884898da28047151d0e56f8dc62927736
 INSERT INTO client(id, first_name, last_name, Login, Password)
 VALUES (3, 'client2', 'client2', 'client2', '5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8');
 -- password : password
-INSERT INTO offer(destination, description, discount, price)
-VALUES ('Italy', 'Pizza i pasta', '18-25', 15);
-INSERT INTO offer(destination, description, discount, price)
-VALUES ('France', 'Steak Frites', '+45', 60);
+INSERT INTO offer(destination, description, price)
+VALUES ('Italy', 'Pizza i pasta', 15);
+INSERT INTO offer(destination, description, price)
+VALUES ('France', 'Steak Frites', 60);
+INSERT INTO destination(offer, mustsees, activities)
+VALUES ('Italy', 'The coliseum', 'Wrestling');
+INSERT INTO destination(offer, mustsees, activities)
+VALUES ('France', 'The Eiffel tower', 'Photography');
