@@ -3,7 +3,7 @@ package servlet;
 import manager.Manager;
 import model.Admin;
 import model.Client;
-import model.Employee;
+import model.Offer;
 import org.apache.commons.codec.digest.DigestUtils;
 
 import javax.servlet.RequestDispatcher;
@@ -32,24 +32,15 @@ public class LoginServlet extends HttpServlet
             String type = "";
             boolean isFound = false;
             Admin admin;
-            Employee employee;
             Client client = Manager.getClientDAO().findByLoginAndPassword(login, password);
 
             if (client == null)
             {
-                employee = Manager.getEmployeeDAO().findByLoginAndPassword(login, password);
-                if (employee == null)
-                {
-                    admin = Manager.getAdminDAO().findByLoginAndPassword(login, password);
-                    if (admin != null)
-                    {
-                        isFound = true;
-                        type = "admin";
-                    }
-                } else
+                admin = Manager.getAdminDAO().findByLoginAndPassword(login, password);
+                if (admin != null)
                 {
                     isFound = true;
-                    type = "employee";
+                    type = "admin";
                 }
             } else
             {
@@ -64,11 +55,11 @@ public class LoginServlet extends HttpServlet
                 session.setAttribute("login", login);
                 session.setAttribute("password", password);
 
-                List<Employee> employeeList = Manager.getEmployeeDAO().findAll();
-                if (employeeList == null)
-                    employeeList = new ArrayList<>();
+                List<Offer> offerList = Manager.getOfferDAO().findAll();
+                if (offerList == null)
+                    offerList = new ArrayList<>();
 
-                request.setAttribute("employeeList", employeeList);
+                request.setAttribute("offerList", offerList);
 
                 RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp");
                 dispatcher.forward(request, response);
@@ -80,7 +71,7 @@ public class LoginServlet extends HttpServlet
             }
         } else
         {
-            request.setAttribute("message", "Please fill in all required fields");
+            request.setAttribute("message", "Please fill in all fields");
             RequestDispatcher dispatcher = request.getRequestDispatcher("login.jsp");
             dispatcher.forward(request, response);
         }

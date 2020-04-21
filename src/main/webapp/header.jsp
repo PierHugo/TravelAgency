@@ -22,13 +22,22 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.jsp">Homepage</a>
+                    <a class="nav-link" href="home">Homepage</a>
                 </li>
             </ul>
             <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="login.jsp">Log in</a>
-                </li>
+                <c:choose>
+                    <c:when test="${sessionScope.type == 'client' || sessionScope.type == 'admin'}">
+                        <li class="nav-item">
+                            <a class="nav-link" href="login">Log out</a>
+                        </li>
+                    </c:when>
+                    <c:otherwise>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login">Log in</a>
+                        </li>
+                    </c:otherwise>
+                </c:choose>
             </ul>
         </div>
     </nav>

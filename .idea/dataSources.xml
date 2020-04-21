@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="resources:hibernate.cfg.xml/Hibernate" uuid="3fa99025-fc5b-4437-b728-d2b00fd563de">
+    <data-source source="LOCAL" name="hibernate.cfg.xml/Hibernate" uuid="29c8fe1c-f898-4335-a50d-1c2b1f9b59ce">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
       <imported>true</imported>
       <remarks>Hibernate
 
-D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/resources/hibernate.cfg.xml</remarks>
+D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/resources/hibernate.cfg.xml</remarks>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://localhost:3308/TP1?serverTimezone=UTC&amp;createDatabaseIfNotExist=true</jdbc-url>
     </data-source>

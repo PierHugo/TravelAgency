@@ -13,10 +13,11 @@
         <property name="show_sql">true</property>
 
         <!--         DB schema will be updated if needed-->
-        <!--        <property name="hibernate.hbm2ddl.auto">create</property>-->
+        <!--         <property name="hibernate.hbm2ddl.auto">create</property>-->
 
+        <mapping class="model.Admin"/>
+        <mapping class="model.Client"/>
         <mapping class="model.Offer"/>
-        <mapping class="model.Destination"/>
 
     </session-factory>
 </hibernate-configuration>

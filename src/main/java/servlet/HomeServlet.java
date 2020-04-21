@@ -13,7 +13,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-@WebServlet(name = "IndexServlet")
+@WebServlet(name = "HomeServlet")
 public class HomeServlet extends HttpServlet
 {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException

@@ -3,7 +3,6 @@ package manager;
 
 import DAO.AdminDAO;
 import DAO.ClientDAO;
-import DAO.EmployeeDAO;
 import DAO.OfferDAO;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -19,7 +18,6 @@ public class Manager
 
     private static OfferDAO offerDAO;
     private static ClientDAO clientDAO;
-    private static EmployeeDAO employeeDAO;
     private static AdminDAO adminDAO;
 
     private Manager()
@@ -30,6 +28,8 @@ public class Manager
         transaction = null;
 
         offerDAO = new OfferDAO();
+        clientDAO = new ClientDAO();
+        adminDAO = new AdminDAO();
     }
 
     public static void beginTransaction()
@@ -73,11 +73,6 @@ public class Manager
     public static ClientDAO getClientDAO()
     {
         return clientDAO;
-    }
-
-    public static EmployeeDAO getEmployeeDAO()
-    {
-        return employeeDAO;
     }
 
     public static AdminDAO getAdminDAO()
