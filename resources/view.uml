@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JavaScript-modules-diagram</ID>
+  <OriginalElement>D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp</OriginalElement>
+  <nodes>
+    <node x="582.0" y="404.0">D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/lib/material-design-4.7.1/js/bootstrap.js#jquery#375;D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/lib/material-design-4.7.1/js/bootstrap.js#popper.js#353;</node>
+    <node x="221.0" y="749.0">D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/lib/material-design-4.7.1/css/bootstrap.min.css</node>
+    <node x="714.0" y="521.0">D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/lib/material-design-4.7.1/js/bootstrap.min.js#jquery#339;D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/lib/material-design-4.7.1/js/bootstrap.min.js#popper.js#318;</node>
+    <node x="772.0" y="218.0">D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/lib/material-design-4.7.1/js/addons/datatables-select.js#datatables.net#1547;D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/lib/material-design-4.7.1/js/addons/datatables-select.js;</node>
+    <node x="325.0" y="269.0">D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/lib/material-design-4.7.1/js/addons/datatables-select.min.js#datatables.net#313;D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/lib/material-design-4.7.1/js/addons/datatables-select.min.js;</node>
+    <node x="598.0" y="125.0">D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/lib/material-design-4.7.1/js/addons/datatables.js;D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/lib/material-design-4.7.1/js/addons/datatables.js;</node>
+    <node x="754.0" y="14.0">D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/lib/material-design-4.7.1/js/addons/datatables.min.js#datatables.net#83186;D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/lib/material-design-4.7.1/js/addons/datatables.min.js#jquery#232;</node>
+    <node x="975.0" y="597.0">D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/footer.jsp</node>
+    <node x="177.0" y="913.0">D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/header.jsp</node>
+    <node x="462.0" y="742.0">D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/lib/material-design-4.7.1/index.html</node>
+    <node x="791.0" y="749.0">D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/lib/material-design-4.7.1/js/jquery-3.3.1.min.js</node>
+    <node x="316.0" y="538.0">D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/lib/material-design-4.7.1/js/mdb.js</node>
+    <node x="386.0" y="954.0">D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/lib/material-design-4.7.1/css/mdb.min.css</node>
+    <node x="1201.0" y="573.0">D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/lib/material-design-4.7.1/js/mdb.min.js</node>
+    <node x="461.0" y="590.0">D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/lib/material-design-4.7.1/js/popper.min.js</node>
+    <node x="0.0" y="960.0">D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/css/style.css</node>
+    <node x="733.0" y="913.0">D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/lib/material-design-4.7.1/css/style.css</node>
+    <node x="587.0" y="0.0">datatables.net</node>
+    <node x="920.0" y="404.0">https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.10.18/b-1.5.6/b-flash-1.5.6/b-html5-1.5.6/b-print-1.5.6/datatables.min.js</node>
+    <node x="1040.0" y="828.0">https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js</node>
+    <node x="1126.0" y="423.0">https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js</node>
+    <node x="1146.0" y="735.0">https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js</node>
+    <node x="607.0" y="968.0">https://use.fontawesome.com/releases/v5.7.0/css/all.css</node>
+    <node x="709.0" y="311.0">jquery</node>
+    <node x="587.0" y="497.0">popper.js</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/footer.jsp" target="D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/lib/material-design-4.7.1/js/bootstrap.min.js#jquery#339;D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/lib/material-design-4.7.1/js/bootstrap.min.js#popper.js#318;">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/header.jsp" target="D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/lib/material-design-4.7.1/css/mdb.min.css">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/header.jsp" target="D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/css/style.css">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/lib/material-design-4.7.1/index.html" target="D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/lib/material-design-4.7.1/js/mdb.js">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/lib/material-design-4.7.1/js/bootstrap.min.js#jquery#339;D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/lib/material-design-4.7.1/js/bootstrap.min.js#popper.js#318;" target="popper.js">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/footer.jsp" target="D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/lib/material-design-4.7.1/js/jquery-3.3.1.min.js">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/footer.jsp" target="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/lib/material-design-4.7.1/index.html" target="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/lib/material-design-4.7.1/js/addons/datatables-select.min.js#datatables.net#313;D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/lib/material-design-4.7.1/js/addons/datatables-select.min.js;" target="datatables.net">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/footer.jsp" target="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/lib/material-design-4.7.1/js/addons/datatables-select.js#datatables.net#1547;D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/lib/material-design-4.7.1/js/addons/datatables-select.js;" target="datatables.net">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/lib/material-design-4.7.1/js/bootstrap.js#jquery#375;D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/lib/material-design-4.7.1/js/bootstrap.js#popper.js#353;" target="popper.js">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/lib/material-design-4.7.1/index.html" target="D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/lib/material-design-4.7.1/js/jquery-3.3.1.min.js">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/lib/material-design-4.7.1/js/addons/datatables.min.js#datatables.net#83186;D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/lib/material-design-4.7.1/js/addons/datatables.min.js#jquery#232;" target="datatables.net">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/lib/material-design-4.7.1/js/addons/datatables-select.min.js#datatables.net#313;D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/lib/material-design-4.7.1/js/addons/datatables-select.min.js;" target="jquery">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/lib/material-design-4.7.1/js/addons/datatables-select.js#datatables.net#1547;D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/lib/material-design-4.7.1/js/addons/datatables-select.js;" target="jquery">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/lib/material-design-4.7.1/index.html" target="D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/lib/material-design-4.7.1/js/bootstrap.min.js#jquery#339;D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/lib/material-design-4.7.1/js/bootstrap.min.js#popper.js#318;">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/lib/material-design-4.7.1/js/bootstrap.js#jquery#375;D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/lib/material-design-4.7.1/js/bootstrap.js#popper.js#353;" target="jquery">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/header.jsp" target="D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/lib/material-design-4.7.1/css/bootstrap.min.css">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/lib/material-design-4.7.1/index.html" target="D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/lib/material-design-4.7.1/css/mdb.min.css">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/lib/material-design-4.7.1/js/addons/datatables.js;D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/lib/material-design-4.7.1/js/addons/datatables.js;" target="datatables.net">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/footer.jsp" target="D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/lib/material-design-4.7.1/js/mdb.min.js">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/lib/material-design-4.7.1/index.html" target="D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/lib/material-design-4.7.1/css/bootstrap.min.css">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/lib/material-design-4.7.1/js/bootstrap.min.js#jquery#339;D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/lib/material-design-4.7.1/js/bootstrap.min.js#popper.js#318;" target="jquery">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/lib/material-design-4.7.1/index.html" target="D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/lib/material-design-4.7.1/js/popper.min.js">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/lib/material-design-4.7.1/js/addons/datatables.js;D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/lib/material-design-4.7.1/js/addons/datatables.js;" target="jquery">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/lib/material-design-4.7.1/index.html" target="D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/lib/material-design-4.7.1/css/style.css">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/lib/material-design-4.7.1/js/addons/datatables.min.js#datatables.net#83186;D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/lib/material-design-4.7.1/js/addons/datatables.min.js#jquery#232;" target="jquery">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/footer.jsp" target="https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.10.18/b-1.5.6/b-flash-1.5.6/b-html5-1.5.6/b-print-1.5.6/datatables.min.js">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/footer.jsp" target="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Orthogonal" zoom="0.5663461538461538" x="668.5" y="510.0" />
+  <SelectedNodes>
+    <node>D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/lib/material-design-4.7.1/js/bootstrap.js#jquery#375;D:/Users/pierhugo/Documents/School/Polytech/DI4/S8/ARCHITECTURE_SI/Exam/TP1/src/main/webapp/lib/material-design-4.7.1/js/bootstrap.js#popper.js#353;</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>All</Category>
+  </Categories>
+  <VISIBILITY>Overview</VISIBILITY>
+</Diagram>
+

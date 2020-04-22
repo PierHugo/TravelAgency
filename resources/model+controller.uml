@@ -32,14 +32,14 @@
       <point x="0.0" y="26.0" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="0.7999999999999998" x="197.57142857142878" y="236.12500000000006" />
+  <settings layout="Hierarchic Group" zoom="0.8002717391304348" x="322.0" y="368.0" />
   <SelectedNodes>
     <node>DAOinterface</node>
   </SelectedNodes>
   <Categories>
-    <Category>Inner Classes</Category>
     <Category>Fields</Category>
     <Category>Properties</Category>
+    <Category>Inner Classes</Category>
   </Categories>
   <SCOPE>All</SCOPE>
   <VISIBILITY>public</VISIBILITY>
