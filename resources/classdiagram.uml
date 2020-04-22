@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>model</OriginalElement>
+  <nodes>
+    <node x="458.0" y="333.0">exception</node>
+    <node x="116.0" y="236.0">model.Employee</node>
+    <node x="237.0" y="333.0">controller</node>
+    <node x="0.0" y="236.0">model.Client</node>
+    <node x="36.0" y="435.0">DAO</node>
+    <node x="273.0" y="0.0">model.Offer</node>
+    <node x="0.0" y="532.0">servlet</node>
+    <node x="0.0" y="333.0">DAOinterface</node>
+    <node x="50.5" y="0.0">model.User</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="model.Employee" target="model.User">
+      <point x="0.0" y="-26.0" />
+      <point x="172.0" y="211.0" />
+      <point x="139.75" y="211.0" />
+      <point x="29.75" y="93.0" />
+    </edge>
+    <edge source="model.Client" target="model.User">
+      <point x="0.0" y="-26.0" />
+      <point x="48.0" y="211.0" />
+      <point x="80.25" y="211.0" />
+      <point x="-29.75" y="93.0" />
+    </edge>
+    <edge source="DAO" target="DAOinterface">
+      <point x="0.0" y="-26.0" />
+      <point x="0.0" y="26.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.7999999999999998" x="197.57142857142878" y="236.12500000000006" />
+  <SelectedNodes>
+    <node>DAOinterface</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Inner Classes</Category>
+    <Category>Fields</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+
