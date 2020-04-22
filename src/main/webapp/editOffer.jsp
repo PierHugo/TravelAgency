@@ -1,13 +1,6 @@
 <jsp:useBean id="successMessage" scope="request" type="java.lang.String" class="java.lang.String"/>
 <jsp:useBean id="errorMessage" scope="request" type="java.lang.String" class="java.lang.String"/>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%--
-  Created by IntelliJ IDEA.
-  User: Kilian
-  Date: 01/04/2019
-  Time: 19:52
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" %>
 <html>
 <head>
