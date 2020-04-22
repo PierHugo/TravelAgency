@@ -3,43 +3,111 @@
   <ID>JAVA</ID>
   <OriginalElement>model</OriginalElement>
   <nodes>
-    <node x="458.0" y="333.0">exception</node>
-    <node x="116.0" y="236.0">model.Employee</node>
-    <node x="237.0" y="333.0">controller</node>
-    <node x="0.0" y="236.0">model.Client</node>
-    <node x="36.0" y="435.0">DAO</node>
-    <node x="273.0" y="0.0">model.Offer</node>
-    <node x="0.0" y="532.0">servlet</node>
-    <node x="0.0" y="333.0">DAOinterface</node>
-    <node x="50.5" y="0.0">model.User</node>
+    <node x="475.75" y="67.0">exception</node>
+    <node x="116.0" y="313.0">model.Employee</node>
+    <node x="241.0" y="594.0">controller</node>
+    <node x="0.0" y="313.0">model.Client</node>
+    <node x="269.0" y="492.0">DAO</node>
+    <node x="460.0" y="236.0">model.Offer</node>
+    <node x="253.0" y="706.0">servlet</node>
+    <node x="248.0" y="313.0">DAOinterface</node>
+    <node x="49.62500000000006" y="0.0">model.User</node>
   </nodes>
   <notes />
   <edges>
+    <edge source="DAO" target="model.Employee">
+      <point x="-15.0" y="-26.0" />
+      <point x="314.0" y="462.0" />
+      <point x="200.0" y="462.0" />
+      <point x="28.0" y="26.0" />
+    </edge>
+    <edge source="servlet" target="model.Client">
+      <point x="-65.14285714285711" y="-26.0" />
+      <point x="263.8571428571429" y="686.0" />
+      <point x="27.40097402597405" y="686.0" />
+      <point x="27.40097402597405" y="472.0" />
+      <point x="16.0" y="472.0" />
+      <point x="-32.0" y="26.0" />
+    </edge>
+    <edge source="servlet" target="controller">
+      <point x="0.0" y="-26.0" />
+      <point x="0.0" y="26.0" />
+    </edge>
+    <edge source="DAO" target="model.Client">
+      <point x="-45.0" y="-26.0" />
+      <point x="284.0" y="472.0" />
+      <point x="80.0" y="472.0" />
+      <point x="32.0" y="26.0" />
+    </edge>
+    <edge source="servlet" target="exception">
+      <point x="65.14285714285711" y="-26.0" />
+      <point x="394.1428571428571" y="686.0" />
+      <point x="596.5" y="686.0" />
+      <point x="596.5" y="211.0" />
+      <point x="601.75" y="211.0" />
+      <point x="42.0" y="26.0" />
+    </edge>
     <edge source="model.Employee" target="model.User">
       <point x="0.0" y="-26.0" />
       <point x="172.0" y="211.0" />
-      <point x="139.75" y="211.0" />
+      <point x="138.87500000000006" y="211.0" />
       <point x="29.75" y="93.0" />
     </edge>
     <edge source="model.Client" target="model.User">
       <point x="0.0" y="-26.0" />
       <point x="48.0" y="211.0" />
-      <point x="80.25" y="211.0" />
+      <point x="79.37500000000006" y="211.0" />
       <point x="-29.75" y="93.0" />
     </edge>
+    <edge source="DAO" target="controller">
+      <point x="45.0" y="26.0" />
+      <point x="374.0" y="569.0" />
+      <point x="395.0" y="569.0" />
+      <point x="66.0" y="-26.0" />
+    </edge>
     <edge source="DAO" target="DAOinterface">
-      <point x="0.0" y="-26.0" />
+      <point x="15.0" y="-26.0" />
       <point x="0.0" y="26.0" />
     </edge>
+    <edge source="DAO" target="model.Offer">
+      <point x="45.0" y="-26.0" />
+      <point x="374.0" y="472.0" />
+      <point x="481.0" y="472.0" />
+      <point x="-42.0" y="103.0" />
+    </edge>
+    <edge source="servlet" target="model.Employee">
+      <point x="-21.714285714285666" y="-26.0" />
+      <point x="307.28571428571433" y="666.0" />
+      <point x="144.0" y="666.0" />
+      <point x="-28.0" y="26.0" />
+    </edge>
+    <edge source="controller" target="DAO">
+      <point x="-22.0" y="-26.0" />
+      <point x="307.0" y="569.0" />
+      <point x="314.0" y="569.0" />
+      <point x="-15.0" y="26.0" />
+    </edge>
+    <edge source="servlet" target="model.Offer">
+      <point x="43.428571428571445" y="-26.0" />
+      <point x="372.42857142857144" y="676.0" />
+      <point x="552.9058441558441" y="676.0" />
+      <point x="552.9058441558441" y="472.0" />
+      <point x="565.0" y="472.0" />
+      <point x="42.0" y="103.0" />
+    </edge>
+    <edge source="model.Offer" target="exception">
+      <point x="0.0" y="-103.0" />
+      <point x="523.0" y="211.0" />
+      <point x="517.75" y="211.0" />
+      <point x="-42.0" y="26.0" />
+    </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="0.8002717391304348" x="322.0" y="368.0" />
-  <SelectedNodes>
-    <node>DAOinterface</node>
-  </SelectedNodes>
+  <settings layout="Hierarchic Group" zoom="1.0" x="313.0" y="332.5" />
+  <SelectedNodes />
   <Categories>
-    <Category>Fields</Category>
     <Category>Properties</Category>
     <Category>Inner Classes</Category>
+    <Category>Methods</Category>
   </Categories>
   <SCOPE>All</SCOPE>
   <VISIBILITY>public</VISIBILITY>
