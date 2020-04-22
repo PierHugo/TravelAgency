@@ -108,11 +108,11 @@ public class OfferServlet extends HttpServlet
         offer.setMustsees(mustsees);
         offer.setActivities(activities);
 
-        boolean created = Manager.getOfferDAO().saveOrUpdate(offer); //TODO : ici le souci de Add (penser à tout remplir)
+        boolean created = Manager.getOfferDAO().saveOrUpdate(offer);
 
         if (created && option.equals("add"))
         {
-            request.setAttribute("successMessage", "add success");
+            request.setAttribute("successMessage", "Add success");
             RequestDispatcher dispatcher = request.getRequestDispatcher("addOffer.jsp");
             dispatcher.forward(request, response);
         } else if (created && option.equals("editing"))
@@ -122,17 +122,17 @@ public class OfferServlet extends HttpServlet
                 offerList = new ArrayList<>();
             request.setAttribute("offerList", offerList);
 
-            request.setAttribute("successMessage", "Editing success");
+            request.setAttribute("successMessage", "Edit success");
             RequestDispatcher dispatcher = request.getRequestDispatcher("editOffer.jsp");
             dispatcher.forward(request, response);
         } else if (option.equals("add"))
         {
-            request.setAttribute("errorMessage", "Adding failed");
+            request.setAttribute("errorMessage", "Add fail");
             RequestDispatcher dispatcher = request.getRequestDispatcher("addOffer.jsp");
             dispatcher.forward(request, response);
         } else
         {
-            request.setAttribute("errorMessage", "Editing failed");
+            request.setAttribute("errorMessage", "Edit fail");
             RequestDispatcher dispatcher = request.getRequestDispatcher("addOffer.jsp");
             dispatcher.forward(request, response);
         }
@@ -191,12 +191,12 @@ public class OfferServlet extends HttpServlet
 
         if (deleted)
         {
-            request.setAttribute("successMessage", "Deleting success");
+            request.setAttribute("successMessage", "Delet success");
             RequestDispatcher dispatcher = request.getRequestDispatcher(option + "Offer.jsp");
             dispatcher.forward(request, response);
         } else
         {
-            request.setAttribute("errorMessage", "Deleting failed");
+            request.setAttribute("errorMessage", "Delet fail");
             RequestDispatcher dispatcher = request.getRequestDispatcher(option + "Offer.jsp");
             dispatcher.forward(request, response);
         }

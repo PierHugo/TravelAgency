@@ -43,7 +43,7 @@ public class OfferDAO
         Manager.commitTransaction();
     }
 
-    public boolean saveOrUpdate(Offer entity) // TODO : ici le souci de Add
+    public boolean saveOrUpdate(Offer entity)
     {
         try
         {

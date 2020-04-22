@@ -18,10 +18,10 @@
     <form method="post" action="" class="animated fadeIn">
         <div class="row mb-3 mt-3">
             <div class="col-12 col-lg-8 offset-lg-2">
-                <label for="selectParty">Offer to delete</label>
-                <select class="browser-default custom-select" name="parti_name" id="selectParty">
+                <label for="selectOffer">Offer to delete</label>
+                <select class="browser-default custom-select" name="destination" id="selectOffer">
                     <option selected disabled value="">Select offer</option>
-                    <jsp:useBean id="oferList" scope="request" type="java.util.List"/>
+                    <jsp:useBean id="offerList" scope="request" type="java.util.List"/>
                     <c:forEach var="offer" items="${offerList}">
                         <option value="${offer.getDestination()}">${offer.getDestination()}</option>
                     </c:forEach>
