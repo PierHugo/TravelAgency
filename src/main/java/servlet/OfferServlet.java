@@ -221,7 +221,6 @@ public class OfferServlet extends HttpServlet
         } catch (EqualsZeroException e)
         {
             full = true;
-            request.setAttribute("errorMessage", "Offer is full");
         }
 
         boolean applied = Controller.getOfferDAO().saveOrUpdate(offer);
@@ -229,6 +228,11 @@ public class OfferServlet extends HttpServlet
         if (applied && !full)
         {
             request.setAttribute("successMessage", "Application success");
+            RequestDispatcher dispatcher = request.getRequestDispatcher(option + "Offer.jsp");
+            dispatcher.forward(request, response);
+        } else if (full)
+        {
+            request.setAttribute("errorMessage", "Offer is full");
             RequestDispatcher dispatcher = request.getRequestDispatcher(option + "Offer.jsp");
             dispatcher.forward(request, response);
         } else
