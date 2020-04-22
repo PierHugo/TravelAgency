@@ -1,4 +1,4 @@
-create table admin
+create table employee
 (
     id         bigint       not null primary key,
     first_name varchar(255) not null,
@@ -29,9 +29,9 @@ create table offer
     slots       varchar(255) not null
 ) engine = InnoDB;
 
-INSERT INTO admin
-VALUES (1, 'admin', 'admin', 'admin', '8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918');
--- password : admin
+INSERT INTO employee
+VALUES (1, 'employee', 'employee', 'employee', '8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918');
+-- password : employee
 INSERT INTO client
 VALUES (2, 'client1', 'client1', 'client1', '5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8');
 INSERT INTO client

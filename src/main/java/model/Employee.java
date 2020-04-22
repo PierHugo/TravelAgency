@@ -5,9 +5,9 @@ import javax.persistence.Entity;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "Admin")
+@Table(name = "Employee")
 @DiscriminatorValue(value = "GenericUser")
-public class Admin extends User
+public class Employee extends User
 {
 
 }

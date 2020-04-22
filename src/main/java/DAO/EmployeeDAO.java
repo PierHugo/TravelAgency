@@ -2,37 +2,37 @@ package DAO;
 
 import DAOinterface.UserDAOInterface;
 import controller.Controller;
-import model.Admin;
+import model.Employee;
 
 import javax.persistence.TypedQuery;
 import java.util.List;
 
-public class AdminDAO implements UserDAOInterface<Admin, Integer>
+public class EmployeeDAO implements UserDAOInterface<Employee, Integer>
 {
 
-    public Admin findById(Integer id)
+    public Employee findById(Integer id)
     {
         Controller.beginTransaction();
-        Admin admin = Controller.getSession().find(Admin.class, id);
+        Employee employee = Controller.getSession().find(Employee.class, id);
         Controller.commitTransaction();
-        return admin;
+        return employee;
     }
 
-    public Admin findByLoginAndPassword(String login, String password)
+    public Employee findByLoginAndPassword(String login, String password)
     {
         Controller.beginTransaction();
-        TypedQuery<Admin> query = Controller.getSession().createQuery("FROM Admin WHERE login = :login AND password = :password", Admin.class);
+        TypedQuery<Employee> query = Controller.getSession().createQuery("FROM Employee WHERE login = :login AND password = :password", Employee.class);
         query.setParameter("login", login);
         query.setParameter("password", password);
-        List<Admin> admins = query.getResultList();
+        List<Employee> employees = query.getResultList();
         Controller.commitTransaction();
-        if (admins.size() == 0)
+        if (employees.size() == 0)
             return null;
         else
-            return admins.get(0);
+            return employees.get(0);
     }
 
-    public boolean delete(Admin entity)
+    public boolean delete(Employee entity)
     {
         try
         {
@@ -49,27 +49,27 @@ public class AdminDAO implements UserDAOInterface<Admin, Integer>
     }
 
     @SuppressWarnings("unchecked")
-    public List<Admin> findAll()
+    public List<Employee> findAll()
     {
         Controller.beginTransaction();
-        List<Admin> admins = (List<Admin>) Controller.getSession().createQuery("from Admin").list();
+        List<Employee> employees = (List<Employee>) Controller.getSession().createQuery("from Employee").list();
         Controller.commitTransaction();
-        return admins;
+        return employees;
     }
 
     public void deleteAll()
     {
         Controller.beginTransaction();
-        for (Admin admin : findAll())
+        for (Employee employee : findAll())
         {
-            if (!Controller.getSession().contains(admin))
-                Controller.getSession().merge(admin);
-            Controller.getSession().delete(admin);
+            if (!Controller.getSession().contains(employee))
+                Controller.getSession().merge(employee);
+            Controller.getSession().delete(employee);
         }
         Controller.commitTransaction();
     }
 
-    public boolean saveOrUpdate(Admin entity)
+    public boolean saveOrUpdate(Employee entity)
     {
         try
         {

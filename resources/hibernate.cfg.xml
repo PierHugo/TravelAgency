@@ -15,7 +15,7 @@
         <!--         DB schema will be updated if needed-->
         <!--         <property name="hibernate.hbm2ddl.auto">create</property>-->
 
-        <mapping class="model.Admin"/>
+        <mapping class="model.Employee"/>
         <mapping class="model.Client"/>
         <mapping class="model.Offer"/>
 

@@ -1,8 +1,8 @@
 package servlet;
 
 import controller.Controller;
-import model.Admin;
 import model.Client;
+import model.Employee;
 import model.Offer;
 import org.apache.commons.codec.digest.DigestUtils;
 
@@ -31,16 +31,16 @@ public class LoginServlet extends HttpServlet
             password = DigestUtils.sha256Hex(password);
             String type = "";
             boolean isFound = false;
-            Admin admin;
+            Employee employee;
             Client client = Controller.getClientDAO().findByLoginAndPassword(login, password);
 
             if (client == null)
             {
-                admin = Controller.getAdminDAO().findByLoginAndPassword(login, password);
-                if (admin != null)
+                employee = Controller.getEmployeeDAO().findByLoginAndPassword(login, password);
+                if (employee != null)
                 {
                     isFound = true;
-                    type = "admin";
+                    type = "employee";
                 }
             } else
             {

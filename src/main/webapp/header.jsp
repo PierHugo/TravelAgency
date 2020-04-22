@@ -20,7 +20,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="home">Homepage</a>
                 </li>
-                <c:if test="${sessionScope.type == 'admin'}">
+                <c:if test="${sessionScope.type == 'employee'}">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
                            aria-haspopup="true"
@@ -37,7 +37,7 @@
             </ul>
             <ul class="navbar-nav">
                 <c:choose>
-                    <c:when test="${sessionScope.type == 'client' || sessionScope.type == 'admin'}">
+                    <c:when test="${sessionScope.type == 'client' || sessionScope.type == 'employee'}">
                         <li class="nav-item">
                             <a class="nav-link" href="login">Log out</a>
                         </li>

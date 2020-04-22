@@ -21,7 +21,7 @@ public class OfferFilter implements Filter
         String type = session.getAttribute("type").toString();
         if (type != null)
         {
-            if (type.equals("admin"))
+            if (type.equals("employee"))
                 chain.doFilter(req, resp);
             else
             {
