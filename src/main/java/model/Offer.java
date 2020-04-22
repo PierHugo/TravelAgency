@@ -25,6 +25,9 @@ public class Offer
     @Column(name = "activities")
     private String activities;
 
+    @Column(name = "slots")
+    private String slots;
+
     public Offer()
     {
     }
@@ -77,5 +80,15 @@ public class Offer
     public void setActivities(String activities)
     {
         this.activities = activities;
+    }
+
+    public String getSlots()
+    {
+        return slots;
+    }
+
+    public void setSlots(String slots)
+    {
+        this.slots = slots;
     }
 }

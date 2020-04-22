@@ -3,6 +3,7 @@
 <jsp:useBean id="price" scope="request" type="java.lang.String" class="java.lang.String"/>
 <jsp:useBean id="mustsees" scope="request" type="java.lang.String" class="java.lang.String"/>
 <jsp:useBean id="activities" scope="request" type="java.lang.String" class="java.lang.String"/>
+<jsp:useBean id="slots" scope="request" type="java.lang.String" class="java.lang.String"/>
 <jsp:useBean id="successMessage" scope="request" type="java.lang.String" class="java.lang.String"/>
 <jsp:useBean id="errorMessage" scope="request" type="java.lang.String" class="java.lang.String"/>
 <html>
@@ -74,6 +75,14 @@
                 <div class="md-form">
                     <input id="activities" type="text" name="activities" class="form-control" value="${activities}">
                     <label for="activities">Activities</label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-8 offset-lg-2">
+                <div class="md-form">
+                    <input id="slots" type="number" name="slots" class="form-control" value="${slots}">
+                    <label for="slots">Slots</label>
                 </div>
             </div>
         </div>

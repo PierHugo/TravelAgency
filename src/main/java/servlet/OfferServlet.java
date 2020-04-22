@@ -68,13 +68,14 @@ public class OfferServlet extends HttpServlet
         String price = request.getParameter("price");
         String mustsees = request.getParameter("mustsees");
         String activities = request.getParameter("activities");
+        String slots = request.getParameter("slots");
 
         String oldDestination = request.getParameter("destination");
 
         if (option.equals("editing"))
         {
             destination = request.getParameter("destinationEdit");
-            if (destination.equals("") || description.equals("") || price.equals("") || mustsees.equals("") || activities.equals(""))
+            if (destination.equals("") || description.equals("") || price.equals("") || mustsees.equals("") || activities.equals("") || slots.equals(""))
             {
                 request.setAttribute("errorMessage", "Please fill in all fields");
                 RequestDispatcher dispatcher = request.getRequestDispatcher("addOffer.jsp");
@@ -84,7 +85,7 @@ public class OfferServlet extends HttpServlet
         } else
         {
             destination = request.getParameter("destinationAdd");
-            if (destination.equals("") || description.equals("") || price.equals("") || mustsees.equals("") || activities.equals(""))
+            if (destination.equals("") || description.equals("") || price.equals("") || mustsees.equals("") || activities.equals("") || slots.equals(""))
             {
                 request.setAttribute("errorMessage", "Please fill in all fields");
                 RequestDispatcher dispatcher = request.getRequestDispatcher("addOffer.jsp");
@@ -106,6 +107,7 @@ public class OfferServlet extends HttpServlet
         offer.setPrice(price);
         offer.setMustsees(mustsees);
         offer.setActivities(activities);
+        offer.setSlots(slots);
 
         boolean created = Manager.getOfferDAO().saveOrUpdate(offer);
 

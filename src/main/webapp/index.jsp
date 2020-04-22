@@ -24,6 +24,7 @@
                     <th>Price</th>
                     <th>Must-sees</th>
                     <th>Activites</th>
+                    <th>Slots available</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -52,6 +53,11 @@
                         <td>
                             <c:out value="${offer.getActivities()}">
                                 ${offer.getActivities()}
+                            </c:out>
+                        </td>
+                        <td>
+                            <c:out value="${offer.getSlots()}">
+                                ${offer.getSlots()}
                             </c:out>
                         </td>
                     </tr>
