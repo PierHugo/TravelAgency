@@ -1,6 +1,6 @@
 package servlet;
 
-import manager.Manager;
+import controller.Controller;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -20,7 +20,7 @@ public class WelcomeServlet extends HttpServlet
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
     {
-        Manager.getManager();
+        Controller.getController();
 
         RequestDispatcher dispatcher = request.getRequestDispatcher("home");
         dispatcher.forward(request, response);

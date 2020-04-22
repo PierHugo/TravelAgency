@@ -1,6 +1,6 @@
 package servlet;
 
-import manager.Manager;
+import controller.Controller;
 import model.Admin;
 import model.Client;
 import model.Offer;
@@ -32,11 +32,11 @@ public class LoginServlet extends HttpServlet
             String type = "";
             boolean isFound = false;
             Admin admin;
-            Client client = Manager.getClientDAO().findByLoginAndPassword(login, password);
+            Client client = Controller.getClientDAO().findByLoginAndPassword(login, password);
 
             if (client == null)
             {
-                admin = Manager.getAdminDAO().findByLoginAndPassword(login, password);
+                admin = Controller.getAdminDAO().findByLoginAndPassword(login, password);
                 if (admin != null)
                 {
                     isFound = true;
@@ -55,7 +55,7 @@ public class LoginServlet extends HttpServlet
                 session.setAttribute("login", login);
                 session.setAttribute("password", password);
 
-                List<Offer> offerList = Manager.getOfferDAO().findAll();
+                List<Offer> offerList = Controller.getOfferDAO().findAll();
                 if (offerList == null)
                     offerList = new ArrayList<>();
 

@@ -1,6 +1,6 @@
 package servlet;
 
-import manager.Manager;
+import controller.Controller;
 import model.Offer;
 
 import javax.servlet.RequestDispatcher;
@@ -41,7 +41,7 @@ public class OfferServlet extends HttpServlet
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
     {
-        List<Offer> offerList = Manager.getOfferDAO().findAll();
+        List<Offer> offerList = Controller.getOfferDAO().findAll();
         if (offerList == null)
             offerList = new ArrayList<>();
         request.setAttribute("offerList", offerList);
@@ -100,7 +100,7 @@ public class OfferServlet extends HttpServlet
             offer = new Offer();
         } else
         {
-            offer = Manager.getOfferDAO().findOfferByDestination(oldDestination);
+            offer = Controller.getOfferDAO().findOfferByDestination(oldDestination);
         }
         offer.setDestination(destination);
         offer.setDescription(description);
@@ -109,7 +109,7 @@ public class OfferServlet extends HttpServlet
         offer.setActivities(activities);
         offer.setSlots(slots);
 
-        boolean created = Manager.getOfferDAO().saveOrUpdate(offer);
+        boolean created = Controller.getOfferDAO().saveOrUpdate(offer);
 
         if (created && option.equals("add"))
         {
@@ -118,7 +118,7 @@ public class OfferServlet extends HttpServlet
             dispatcher.forward(request, response);
         } else if (created && option.equals("editing"))
         {
-            List<Offer> offerList = Manager.getOfferDAO().findAll();
+            List<Offer> offerList = Controller.getOfferDAO().findAll();
             if (offerList == null)
                 offerList = new ArrayList<>();
             request.setAttribute("offerList", offerList);
@@ -146,7 +146,7 @@ public class OfferServlet extends HttpServlet
         if (destination == null)
         {
 
-            List<Offer> offerList = Manager.getOfferDAO().findAll();
+            List<Offer> offerList = Controller.getOfferDAO().findAll();
             if (offerList == null)
                 offerList = new ArrayList<>();
             request.setAttribute("offerList", offerList);
@@ -157,7 +157,7 @@ public class OfferServlet extends HttpServlet
             return;
         }
 
-        Offer offer = Manager.getOfferDAO().findOfferByDestination(destination);
+        Offer offer = Controller.getOfferDAO().findOfferByDestination(destination);
         request.setAttribute("destination", offer.getDestination());
         request.setAttribute("destination", offer.getDestination());
         RequestDispatcher dispatcher = request.getRequestDispatcher("addOffer.jsp");
@@ -173,7 +173,7 @@ public class OfferServlet extends HttpServlet
         {
             request.setAttribute("errorMessage", "Nothing to delete");
 
-            List<Offer> offerList = Manager.getOfferDAO().findAll();
+            List<Offer> offerList = Controller.getOfferDAO().findAll();
             if (offerList == null)
                 offerList = new ArrayList<>();
             request.setAttribute("offerList", offerList);
@@ -183,9 +183,9 @@ public class OfferServlet extends HttpServlet
             return;
         }
 
-        boolean deleted = Manager.getOfferDAO().delete(Manager.getOfferDAO().findOfferByDestination(destination));
+        boolean deleted = Controller.getOfferDAO().delete(Controller.getOfferDAO().findOfferByDestination(destination));
 
-        List<Offer> offerList = Manager.getOfferDAO().findAll();
+        List<Offer> offerList = Controller.getOfferDAO().findAll();
         if (offerList == null)
             offerList = new ArrayList<>();
         request.setAttribute("offerList", offerList);

@@ -1,6 +1,6 @@
 package servlet;
 
-import manager.Manager;
+import controller.Controller;
 import model.Offer;
 
 import javax.servlet.RequestDispatcher;
@@ -23,7 +23,7 @@ public class HomeServlet extends HttpServlet
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
     {
-        List<Offer> offerList = Manager.getOfferDAO().findAll();
+        List<Offer> offerList = Controller.getOfferDAO().findAll();
         if (offerList == null)
             offerList = new ArrayList<>();
 

@@ -1,7 +1,7 @@
 package DAO;
 
 import DAOinterface.UserDAOInterface;
-import manager.Manager;
+import controller.Controller;
 import model.Admin;
 
 import javax.persistence.TypedQuery;
@@ -12,20 +12,20 @@ public class AdminDAO implements UserDAOInterface<Admin, Integer>
 
     public Admin findById(Integer id)
     {
-        Manager.beginTransaction();
-        Admin admin = Manager.getSession().find(Admin.class, id);
-        Manager.commitTransaction();
+        Controller.beginTransaction();
+        Admin admin = Controller.getSession().find(Admin.class, id);
+        Controller.commitTransaction();
         return admin;
     }
 
     public Admin findByLoginAndPassword(String login, String password)
     {
-        Manager.beginTransaction();
-        TypedQuery<Admin> query = Manager.getSession().createQuery("FROM Admin WHERE login = :login AND password = :password", Admin.class);
+        Controller.beginTransaction();
+        TypedQuery<Admin> query = Controller.getSession().createQuery("FROM Admin WHERE login = :login AND password = :password", Admin.class);
         query.setParameter("login", login);
         query.setParameter("password", password);
         List<Admin> admins = query.getResultList();
-        Manager.commitTransaction();
+        Controller.commitTransaction();
         if (admins.size() == 0)
             return null;
         else
@@ -36,11 +36,11 @@ public class AdminDAO implements UserDAOInterface<Admin, Integer>
     {
         try
         {
-            Manager.beginTransaction();
-            if (!Manager.getSession().contains(entity))
-                Manager.getSession().merge(entity);
-            Manager.getSession().delete(entity);
-            Manager.commitTransaction();
+            Controller.beginTransaction();
+            if (!Controller.getSession().contains(entity))
+                Controller.getSession().merge(entity);
+            Controller.getSession().delete(entity);
+            Controller.commitTransaction();
             return true;
         } catch (Exception e)
         {
@@ -51,31 +51,31 @@ public class AdminDAO implements UserDAOInterface<Admin, Integer>
     @SuppressWarnings("unchecked")
     public List<Admin> findAll()
     {
-        Manager.beginTransaction();
-        List<Admin> admins = (List<Admin>) Manager.getSession().createQuery("from Admin").list();
-        Manager.commitTransaction();
+        Controller.beginTransaction();
+        List<Admin> admins = (List<Admin>) Controller.getSession().createQuery("from Admin").list();
+        Controller.commitTransaction();
         return admins;
     }
 
     public void deleteAll()
     {
-        Manager.beginTransaction();
+        Controller.beginTransaction();
         for (Admin admin : findAll())
         {
-            if (!Manager.getSession().contains(admin))
-                Manager.getSession().merge(admin);
-            Manager.getSession().delete(admin);
+            if (!Controller.getSession().contains(admin))
+                Controller.getSession().merge(admin);
+            Controller.getSession().delete(admin);
         }
-        Manager.commitTransaction();
+        Controller.commitTransaction();
     }
 
     public boolean saveOrUpdate(Admin entity)
     {
         try
         {
-            Manager.beginTransaction();
-            Manager.getSession().saveOrUpdate(entity);
-            Manager.commitTransaction();
+            Controller.beginTransaction();
+            Controller.getSession().saveOrUpdate(entity);
+            Controller.commitTransaction();
             return true;
         } catch (Exception e)
         {

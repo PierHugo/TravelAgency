@@ -1,6 +1,6 @@
 package servlet;
 
-import manager.Manager;
+import controller.Controller;
 import model.Client;
 import org.apache.commons.codec.digest.DigestUtils;
 
@@ -36,7 +36,7 @@ public class RegisterServlet extends HttpServlet
         client.setLogin(login);
         client.setPassword(DigestUtils.sha256Hex(password));
 
-        boolean created = Manager.getClientDAO().saveOrUpdate(client);
+        boolean created = Controller.getClientDAO().saveOrUpdate(client);
 
         if (created)
         {

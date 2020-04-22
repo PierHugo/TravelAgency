@@ -1,7 +1,7 @@
 package DAO;
 
 import DAOinterface.UserDAOInterface;
-import manager.Manager;
+import controller.Controller;
 import model.Client;
 
 import javax.persistence.TypedQuery;
@@ -11,20 +11,20 @@ public class ClientDAO implements UserDAOInterface<Client, Integer>
 {
     public Client findById(Integer id)
     {
-        Manager.beginTransaction();
-        Client client = Manager.getSession().find(Client.class, id);
-        Manager.commitTransaction();
+        Controller.beginTransaction();
+        Client client = Controller.getSession().find(Client.class, id);
+        Controller.commitTransaction();
         return client;
     }
 
     public Client findByLoginAndPassword(String login, String password)
     {
-        Manager.beginTransaction();
-        TypedQuery<Client> query = Manager.getSession().createQuery("FROM Client WHERE login = :login AND password = :password", Client.class);
+        Controller.beginTransaction();
+        TypedQuery<Client> query = Controller.getSession().createQuery("FROM Client WHERE login = :login AND password = :password", Client.class);
         query.setParameter("login", login);
         query.setParameter("password", password);
         List<Client> clients = query.getResultList();
-        Manager.commitTransaction();
+        Controller.commitTransaction();
         if (clients.size() == 0)
             return null;
         else
@@ -35,11 +35,11 @@ public class ClientDAO implements UserDAOInterface<Client, Integer>
     {
         try
         {
-            Manager.beginTransaction();
-            if (!Manager.getSession().contains(entity))
-                Manager.getSession().merge(entity);
-            Manager.getSession().delete(entity);
-            Manager.commitTransaction();
+            Controller.beginTransaction();
+            if (!Controller.getSession().contains(entity))
+                Controller.getSession().merge(entity);
+            Controller.getSession().delete(entity);
+            Controller.commitTransaction();
             return true;
         } catch (Exception e)
         {
@@ -50,31 +50,31 @@ public class ClientDAO implements UserDAOInterface<Client, Integer>
     @SuppressWarnings("unchecked")
     public List<Client> findAll()
     {
-        Manager.beginTransaction();
-        List<Client> clients = (List<Client>) Manager.getSession().createQuery("from Client").list();
-        Manager.commitTransaction();
+        Controller.beginTransaction();
+        List<Client> clients = (List<Client>) Controller.getSession().createQuery("from Client").list();
+        Controller.commitTransaction();
         return clients;
     }
 
     public void deleteAll()
     {
-        Manager.beginTransaction();
+        Controller.beginTransaction();
         for (Client client : findAll())
         {
-            if (!Manager.getSession().contains(client))
-                Manager.getSession().merge(client);
-            Manager.getSession().delete(client);
+            if (!Controller.getSession().contains(client))
+                Controller.getSession().merge(client);
+            Controller.getSession().delete(client);
         }
-        Manager.commitTransaction();
+        Controller.commitTransaction();
     }
 
     public boolean saveOrUpdate(Client entity)
     {
         try
         {
-            Manager.beginTransaction();
-            Manager.getSession().saveOrUpdate(entity);
-            Manager.commitTransaction();
+            Controller.beginTransaction();
+            Controller.getSession().saveOrUpdate(entity);
+            Controller.commitTransaction();
             return true;
         } catch (Exception e)
         {
