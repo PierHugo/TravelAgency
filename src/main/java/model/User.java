@@ -10,7 +10,7 @@ public abstract class User
 {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
     @Column(name = "first_name", nullable = false)
@@ -24,6 +24,12 @@ public abstract class User
 
     @Column(name = "password", nullable = false)
     private String password;
+
+    @Column(name = "age", nullable = false)
+    private String age;
+
+    @Column(name = "city", nullable = false)
+    private String city;
 
     public long getId()
     {
@@ -73,5 +79,25 @@ public abstract class User
     public void setPassword(String password)
     {
         this.password = password;
+    }
+
+    public String getAge()
+    {
+        return age;
+    }
+
+    public void setAge(String age)
+    {
+        this.age = age;
+    }
+
+    public String getCity()
+    {
+        return city;
+    }
+
+    public void setCity(String city)
+    {
+        this.city = city;
     }
 }

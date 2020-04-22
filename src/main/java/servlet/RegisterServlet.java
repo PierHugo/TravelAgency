@@ -21,8 +21,10 @@ public class RegisterServlet extends HttpServlet
         String password = request.getParameter("password");
         String firstName = request.getParameter("firstname");
         String lastName = request.getParameter("lastname");
+        String age = request.getParameter("age");
+        String city = request.getParameter("city");
 
-        if (login.equals("") || password.equals("") || firstName.equals("") || lastName.equals(""))
+        if (login.equals("") || password.equals("") || firstName.equals("") || lastName.equals("") || age.equals("") || city.equals(""))
         {
             request.setAttribute("message", "Please fill in all fields");
             RequestDispatcher dispatcher = request.getRequestDispatcher("register.jsp");
@@ -33,10 +35,12 @@ public class RegisterServlet extends HttpServlet
         Client client = new Client();
         client.setFirstName(firstName);
         client.setLastName(lastName);
+        client.setAge(age);
+        client.setCity(city);
         client.setLogin(login);
         client.setPassword(DigestUtils.sha256Hex(password));
 
-        boolean created = Controller.getClientDAO().saveOrUpdate(client);
+        boolean created = Controller.getClientDAO().saveOrUpdate(client); //Bug inscription
 
         if (created)
         {

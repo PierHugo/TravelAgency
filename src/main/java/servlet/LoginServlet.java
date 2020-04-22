@@ -85,7 +85,7 @@ public class LoginServlet extends HttpServlet
         {
             HttpSession session = request.getSession();
             session.invalidate();
-            request.setAttribute("registerSuccess", "Logout success");
+            request.setAttribute("loginSuccess", "Logout success");
             RequestDispatcher dispatcher = request.getRequestDispatcher("login.jsp");
             dispatcher.forward(request, response);
         } else

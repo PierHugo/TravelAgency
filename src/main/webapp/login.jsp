@@ -1,4 +1,4 @@
-<jsp:useBean id="registerSuccess" scope="request" type="java.lang.String" class="java.lang.String"/>
+<jsp:useBean id="loginSuccess" scope="request" type="java.lang.String" class="java.lang.String"/>
 <jsp:useBean id="message" scope="request" type="java.lang.String" class="java.lang.String"/>
 <html>
 <head>
@@ -36,7 +36,7 @@
                 ${message}
             </div>
             <div class="col-12 col-lg-8 offset-lg-2 text-center text-info" id="success">
-                ${registerSuccess}
+                ${loginSuccess}
             </div>
         </div>
         <div class="row">

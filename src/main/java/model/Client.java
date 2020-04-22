@@ -1,11 +1,12 @@
 package model;
 
-import javax.persistence.*;
+import javax.persistence.DiscriminatorValue;
+import javax.persistence.Entity;
+import javax.persistence.Table;
 
 @Entity
 @Table(name = "Client")
 @DiscriminatorValue(value = "GenericUser")
-@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
 public class Client extends User
 {
 }

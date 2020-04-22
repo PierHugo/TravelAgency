@@ -48,18 +48,6 @@ public class ClientDAO implements UserDAOInterface<Client, Integer>
         return clients;
     }
 
-    public void deleteAll()
-    {
-        Controller.beginTransaction();
-        for (Client client : findAll())
-        {
-            if (!Controller.getSession().contains(client))
-                Controller.getSession().merge(client);
-            Controller.getSession().delete(client);
-        }
-        Controller.commitTransaction();
-    }
-
     public boolean saveOrUpdate(Client entity)
     {
         try

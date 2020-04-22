@@ -1,3 +1,4 @@
+<jsp:useBean id="registerSuccess" scope="request" type="java.lang.String" class="java.lang.String"/>
 <jsp:useBean id="message" scope="request" type="java.lang.String" class="java.lang.String"/>
 <html>
 <head>
@@ -32,6 +33,22 @@
         <div class="row mb-3 mt-3">
             <div class="col-12 col-lg-8 offset-lg-2">
                 <div class="md-form">
+                    <input id="age" type="number" name="age" class="form-control">
+                    <label for="age">Age</label>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-3 mt-3">
+            <div class="col-12 col-lg-8 offset-lg-2">
+                <div class="md-form">
+                    <input id="city" type="text" name="city" class="form-control">
+                    <label for="city">Last name</label>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-3 mt-3">
+            <div class="col-12 col-lg-8 offset-lg-2">
+                <div class="md-form">
                     <input id="login" type="text" name="login" class="form-control">
                     <label for="login">Username</label>
                 </div>
@@ -46,9 +63,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-12 col-lg-8 offset-lg-2" id="success">
-
-            </div>
+            <div class="col-12 col-lg-8 offset-lg-2" id="success"></div>
         </div>
         <div class="row">
             <div class="col-12 col-lg-8 offset-lg-2">
@@ -56,6 +71,14 @@
             </div>
         </div>
     </form>
+    <div class="row mb-3 mt-3">
+        <div class="col-12 col-lg-8 offset-lg-2 text-center text-danger" id="error">
+            ${message}
+        </div>
+        <div class="col-12 col-lg-8 offset-lg-2 text-center text-info" id="success">
+            ${registerSuccess}
+        </div>
+    </div>
     <div class="text-center mt-2 pb-3">
         <p>Already registered ?
             <a href="login">Sign in</a>

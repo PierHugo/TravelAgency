@@ -1,5 +1,6 @@
 <jsp:useBean id="offerList" scope="request" class="java.util.ArrayList"/>
 <jsp:useBean id="successMessage" scope="request" type="java.lang.String" class="java.lang.String"/>
+<jsp:useBean id="orderMessage" scope="request" type="java.lang.String" class="java.lang.String"/>
 <jsp:useBean id="errorMessage" scope="request" type="java.lang.String" class="java.lang.String"/>
 <html>
 <head>
@@ -33,6 +34,9 @@
             </div>
             <div class="col-12 col-lg-8 offset-lg-2 text-center text-info" id="success">
                 ${successMessage}
+            </div>
+            <div class="col-12 col-lg-8 offset-lg-2 text-center text-info" id="order">
+                ${orderMessage}
             </div>
         </div>
         <div class="row">
