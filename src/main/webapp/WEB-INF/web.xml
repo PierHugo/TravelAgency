@@ -55,6 +55,7 @@
         <url-pattern>/offer</url-pattern>
     </servlet-mapping>
 
+<!--
     <filter>
         <filter-name>OfferFilter</filter-name>
         <filter-class>filter.OfferFilter</filter-class>
@@ -63,6 +64,7 @@
         <filter-name>OfferFilter</filter-name>
         <url-pattern>/offer</url-pattern>
     </filter-mapping>
+-->
 
     <jsp-config>
         <jsp-property-group>

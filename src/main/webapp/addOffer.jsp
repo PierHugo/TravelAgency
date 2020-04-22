@@ -9,7 +9,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Add offer</title>
+    <title>Add/Edit offer</title>
 
 </head>
 
@@ -17,7 +17,7 @@
 <body>
 <div class="container border-light border rounded mt-5 pt-5 mb-5 pb-5">
     <div class="heading text-center pt-4">
-        <h3 class="card-title">Add offer</h3>
+        <h3 class="card-title">Add/Edit offer</h3>
     </div>
     <form method="post" action="" class="animated fadeIn">
         <jsp:useBean id="option" scope="request" type="java.lang.String" class="java.lang.String"/>

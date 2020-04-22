@@ -93,7 +93,6 @@ public class OfferServlet extends HttpServlet
             }
         }
 
-
         Offer offer;
         if (option.equals("add"))
         {
@@ -191,12 +190,12 @@ public class OfferServlet extends HttpServlet
 
         if (deleted)
         {
-            request.setAttribute("successMessage", "Delet success");
+            request.setAttribute("successMessage", "Delete success");
             RequestDispatcher dispatcher = request.getRequestDispatcher(option + "Offer.jsp");
             dispatcher.forward(request, response);
         } else
         {
-            request.setAttribute("errorMessage", "Delet fail");
+            request.setAttribute("errorMessage", "Delete fail");
             RequestDispatcher dispatcher = request.getRequestDispatcher(option + "Offer.jsp");
             dispatcher.forward(request, response);
         }
