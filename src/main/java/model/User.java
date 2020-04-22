@@ -11,7 +11,7 @@ public abstract class User
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id;
+    private long id;
 
     @Column(name = "first_name", nullable = false)
     private String firstName;
@@ -25,12 +25,12 @@ public abstract class User
     @Column(name = "password", nullable = false)
     private String password;
 
-    public int getId()
+    public long getId()
     {
         return id;
     }
 
-    public void setId(int id)
+    public void setId(long id)
     {
         this.id = id;
     }
@@ -73,11 +73,5 @@ public abstract class User
     public void setPassword(String password)
     {
         this.password = password;
-    }
-
-    @Override
-    public String toString()
-    {
-        return lastName + " " + firstName;
     }
 }

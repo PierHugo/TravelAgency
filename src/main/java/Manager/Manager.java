@@ -79,5 +79,6 @@ public class Manager
     {
         return adminDAO;
     }
+
 }
 

@@ -46,6 +46,15 @@
         <url-pattern>/register</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>OfferServlet</servlet-name>
+        <servlet-class>servlet.OfferServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>OfferServlet</servlet-name>
+        <url-pattern>/offer</url-pattern>
+    </servlet-mapping>
+
     <filter>
         <filter-name>OfferFilter</filter-name>
         <filter-class>filter.OfferFilter</filter-class>

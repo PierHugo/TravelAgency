@@ -18,7 +18,6 @@
         <mapping class="model.Admin"/>
         <mapping class="model.Client"/>
         <mapping class="model.Offer"/>
-        <mapping class="model.Destination"/>
 
     </session-factory>
 </hibernate-configuration>

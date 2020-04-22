@@ -17,6 +17,7 @@ public class OfferFilter implements Filter
     {
         HttpServletRequest request = (HttpServletRequest) req;
         HttpSession session = request.getSession();
+        //TODO : bug n'affiche pas 403
         String type = session.getAttribute("type").toString();
         if (type != null)
         {

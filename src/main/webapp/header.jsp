@@ -3,10 +3,6 @@
 <link href="css/style.css" rel="stylesheet">
 <link href="lib/material-design-4.7.1/css/bootstrap.min.css" rel="stylesheet">
 <link href="lib/material-design-4.7.1/css/mdb.min.css" rel="stylesheet">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="stylesheet" type="text/css"
-      href="https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.10.18/b-1.5.6/b-flash-1.5.6/b-html5-1.5.6/b-print-1.5.6/datatables.min.css"/>
 
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -34,18 +30,6 @@
                                 <button class="dropdown-item" name="Offer" value="add">Add</button>
                                 <button class="dropdown-item" name="Offer" value="edit">Edit</button>
                                 <button class="dropdown-item" name="Offer" value="delete">Delete</button>
-                            </form>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
-                           aria-haspopup="true"
-                           aria-expanded="false">Destinations</a>
-                        <div class="dropdown-menu dropdown-secondary">
-                            <form method="get" action="destination">
-                                <button class="dropdown-item" name="Destination" value="add">Add</button>
-                                <button class="dropdown-item" name="Destination" value="edit">Edit</button>
-                                <button class="dropdown-item" name="Destination" value="delete">Delete</button>
                             </form>
                         </div>
                     </li>

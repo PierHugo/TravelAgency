@@ -1,39 +1,40 @@
 package model;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
 @Table(name = "Offer")
 public class Offer
 {
-
-    /*
-        @Id
-        @Column(name="destination")
-        @GeneratedValue(generator="gen")
-        @GenericGenerator(name="gen", strategy="foreign",parameters=@Parameter(name="property", value="offer"))
-        private Destination destination;
-    */
-
     @Id
-    @OneToOne(mappedBy = "offer")
-    private Destination destination;
+    @Column(name = "destination")
+    private String destination;
 
     @Column(name = "description")
     private String description;
+
     @Column(name = "price")
-    private float price;
+    private String price;
+
+    @Column(name = "mustsees")
+    private String mustsees;
+
+    @Column(name = "activities")
+    private String activities;
 
     public Offer()
     {
     }
 
-    public Destination getDestination()
+    public String getDestination()
     {
         return destination;
     }
 
-    public void setDestination(Destination destination)
+    public void setDestination(String destination)
     {
         this.destination = destination;
     }
@@ -48,13 +49,33 @@ public class Offer
         this.description = description;
     }
 
-    public float getPrice()
+    public String getPrice()
     {
         return price;
     }
 
-    public void setPrice(float price)
+    public void setPrice(String price)
     {
         this.price = price;
+    }
+
+    public String getMustsees()
+    {
+        return mustsees;
+    }
+
+    public void setMustsees(String mustsees)
+    {
+        this.mustsees = mustsees;
+    }
+
+    public String getActivities()
+    {
+        return activities;
+    }
+
+    public void setActivities(String activities)
+    {
+        this.activities = activities;
     }
 }

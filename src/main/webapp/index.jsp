@@ -22,6 +22,8 @@
                     <th>Destination</th>
                     <th>Description</th>
                     <th>Price</th>
+                    <th>Must-sees</th>
+                    <th>Activites</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -40,6 +42,16 @@
                         <td>
                             <c:out value="${offer.getPrice()}">
                                 ${offer.getPrice()}
+                            </c:out>
+                        </td>
+                        <td>
+                            <c:out value="${offer.getMustsees()}">
+                                ${offer.getMustsees()}
+                            </c:out>
+                        </td>
+                        <td>
+                            <c:out value="${offer.getActivities()}">
+                                ${offer.getActivities()}
                             </c:out>
                         </td>
                     </tr>
