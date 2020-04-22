@@ -8,7 +8,5 @@ public interface DAOInterface<T>
 
     List<T> findAll();
 
-    void deleteAll();
-
     boolean saveOrUpdate(T entity);
 }

@@ -31,18 +31,6 @@ public class OfferDAO
         return offers;
     }
 
-    public void deleteAll()
-    {
-        Controller.beginTransaction();
-        for (Offer p : findAll())
-        {
-            if (!Controller.getSession().contains(p))
-                Controller.getSession().merge(p);
-            Controller.getSession().delete(p);
-        }
-        Controller.commitTransaction();
-    }
-
     public boolean saveOrUpdate(Offer entity)
     {
         try

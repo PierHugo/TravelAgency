@@ -49,32 +49,26 @@ public class Controller
     {
         transaction.commit();
     }
-
     public static SessionFactory getSessionFactory()
     {
         return sessionFactory;
     }
-
     public static Session getSession()
     {
         return session;
     }
-
     public static Transaction getTransaction()
     {
         return transaction;
     }
-
     public static OfferDAO getOfferDAO()
     {
         return offerDAO;
     }
-
     public static ClientDAO getClientDAO()
     {
         return clientDAO;
     }
-
     public static EmployeeDAO getEmployeeDAO()
     {
         return employeeDAO;

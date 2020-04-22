@@ -6,7 +6,7 @@
 
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="">
+        <a class="navbar-brand" href="" onclick="return false">
             <span class="fas fa-plane"></span>
             <span class="px-1">Travel Agency</span>
         </a>
@@ -20,16 +20,20 @@
                 <li class="nav-item">
                     <a class="nav-link" href="home">Homepage</a>
                 </li>
-                <c:if test="${sessionScope.type == 'employee'}">
+                <c:if test="${sessionScope.type == 'employee' || sessionScope.type == 'client'}">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
                            aria-haspopup="true"
                            aria-expanded="false">Offers</a>
                         <div class="dropdown-menu dropdown-secondary">
                             <form method="get" action="offer">
-                                <button class="dropdown-item" name="Offer" value="add">Add</button>
-                                <button class="dropdown-item" name="Offer" value="edit">Edit</button>
-                                <button class="dropdown-item" name="Offer" value="delete">Delete</button>
+                                <button class="dropdown-item" name="Offer" value="apply">Apply</button>
+                                <c:if test="${sessionScope.type == 'employee'}">
+                                    <hr>
+                                    <button class="dropdown-item" name="Offer" value="add">Add</button>
+                                    <button class="dropdown-item" name="Offer" value="edit">Edit</button>
+                                    <button class="dropdown-item" name="Offer" value="delete">Delete</button>
+                                </c:if>
                             </form>
                         </div>
                     </li>

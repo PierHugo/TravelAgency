@@ -1,5 +1,7 @@
 package model;
 
+import exception.EqualsZeroException;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -90,5 +92,14 @@ public class Offer
     public void setSlots(String slots)
     {
         this.slots = slots;
+    }
+
+    public void apply() throws EqualsZeroException
+    {
+        int nbslots = Integer.parseInt(this.slots);
+        if (nbslots == 0)
+            throw new EqualsZeroException();
+        nbslots -= 1;
+        slots = String.valueOf(nbslots);
     }
 }

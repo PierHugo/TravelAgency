@@ -9,14 +9,6 @@ import java.util.List;
 
 public class ClientDAO implements UserDAOInterface<Client, Integer>
 {
-    public Client findById(Integer id)
-    {
-        Controller.beginTransaction();
-        Client client = Controller.getSession().find(Client.class, id);
-        Controller.commitTransaction();
-        return client;
-    }
-
     public Client findByLoginAndPassword(String login, String password)
     {
         Controller.beginTransaction();

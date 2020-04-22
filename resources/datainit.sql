@@ -30,8 +30,8 @@ create table offer
 ) engine = InnoDB;
 
 INSERT INTO employee
-VALUES (1, 'employee', 'employee', 'employee', '8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918');
--- password : employee
+VALUES (1, 'employee', 'employee', 'employee', '5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8');
+-- password : password
 INSERT INTO client
 VALUES (2, 'client1', 'client1', 'client1', '5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8');
 INSERT INTO client

@@ -1,6 +1,7 @@
 package servlet;
 
 import controller.Controller;
+import exception.EqualsZeroException;
 import model.Offer;
 
 import javax.servlet.RequestDispatcher;
@@ -29,6 +30,9 @@ public class OfferServlet extends HttpServlet
             case "delete":
                 deleteOffer(request, response);
                 break;
+            case "apply":
+                applyOffer(request, response);
+                break;
             default:
             {
                 request.setAttribute("errorMessage", "The parameter to add/edit/delete has been modified");
@@ -36,6 +40,7 @@ public class OfferServlet extends HttpServlet
                 dispatcher.forward(request, response);
                 break;
             }
+
         }
     }
 
@@ -198,6 +203,37 @@ public class OfferServlet extends HttpServlet
         } else
         {
             request.setAttribute("errorMessage", "Delete fail");
+            RequestDispatcher dispatcher = request.getRequestDispatcher(option + "Offer.jsp");
+            dispatcher.forward(request, response);
+        }
+    }
+
+    private void applyOffer(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
+    {
+        String option = request.getParameter("Offer");
+        String destination = request.getParameter("destination");
+
+        Offer offer = Controller.getOfferDAO().findOfferByDestination(destination);
+        boolean full = false;
+        try
+        {
+            offer.apply();
+        } catch (EqualsZeroException e)
+        {
+            full = true;
+            request.setAttribute("errorMessage", "Offer is full");
+        }
+
+        boolean applied = Controller.getOfferDAO().saveOrUpdate(offer);
+
+        if (applied && !full)
+        {
+            request.setAttribute("successMessage", "Application success");
+            RequestDispatcher dispatcher = request.getRequestDispatcher(option + "Offer.jsp");
+            dispatcher.forward(request, response);
+        } else
+        {
+            request.setAttribute("errorMessage", "Application fail");
             RequestDispatcher dispatcher = request.getRequestDispatcher(option + "Offer.jsp");
             dispatcher.forward(request, response);
         }

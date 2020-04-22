@@ -1,3 +1,4 @@
+/*
 package filter;
 
 import javax.servlet.*;
@@ -41,3 +42,4 @@ public class OfferFilter implements Filter
     }
 
 }
+*/

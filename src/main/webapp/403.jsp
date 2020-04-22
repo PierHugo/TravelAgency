@@ -1,4 +1,3 @@
-<jsp:useBean id="offerList" scope="request" class="java.util.ArrayList"/>
 <html>
 <head>
     <meta charset="UTF-8">

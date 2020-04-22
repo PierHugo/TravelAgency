@@ -9,15 +9,6 @@ import java.util.List;
 
 public class EmployeeDAO implements UserDAOInterface<Employee, Integer>
 {
-
-    public Employee findById(Integer id)
-    {
-        Controller.beginTransaction();
-        Employee employee = Controller.getSession().find(Employee.class, id);
-        Controller.commitTransaction();
-        return employee;
-    }
-
     public Employee findByLoginAndPassword(String login, String password)
     {
         Controller.beginTransaction();
@@ -55,18 +46,6 @@ public class EmployeeDAO implements UserDAOInterface<Employee, Integer>
         List<Employee> employees = (List<Employee>) Controller.getSession().createQuery("from Employee").list();
         Controller.commitTransaction();
         return employees;
-    }
-
-    public void deleteAll()
-    {
-        Controller.beginTransaction();
-        for (Employee employee : findAll())
-        {
-            if (!Controller.getSession().contains(employee))
-                Controller.getSession().merge(employee);
-            Controller.getSession().delete(employee);
-        }
-        Controller.commitTransaction();
     }
 
     public boolean saveOrUpdate(Employee entity)

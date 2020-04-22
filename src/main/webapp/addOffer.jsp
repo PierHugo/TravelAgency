@@ -1,3 +1,4 @@
+<jsp:useBean id="offerList" scope="request" class="java.util.ArrayList"/>
 <jsp:useBean id="destination" scope="request" type="java.lang.String" class="java.lang.String"/>
 <jsp:useBean id="description" scope="request" type="java.lang.String" class="java.lang.String"/>
 <jsp:useBean id="price" scope="request" type="java.lang.String" class="java.lang.String"/>
