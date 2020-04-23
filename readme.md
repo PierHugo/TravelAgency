@@ -8,6 +8,8 @@ Travel Agency est une application Web écrite en Jakarta EE pour la gestion d'un
 
 * Insérer les tables et données dans la base de données avec le fichier _resources\datainit.sql_.
 
+* Lancer l'application sur un server TomCat.
+
 ## Fonctionnalités
 
 * Les employés peuvent administrer les offres de voyage (Ajouter/Éditer/Supprimer), les employés et les clients peuvent réserver des offres de voyage.
