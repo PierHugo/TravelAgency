@@ -228,7 +228,7 @@ public class OfferServlet extends HttpServlet
         if (applied && !full)
         {
             request.setAttribute("successMessage", "Application success");
-            request.setAttribute("orderMessage", "Vous devez payer " + offer.getPrice());
+            request.setAttribute("orderMessage", "You must pay " + offer.getPrice());
             RequestDispatcher dispatcher = request.getRequestDispatcher(option + "Offer.jsp");
             dispatcher.forward(request, response);
         } else if (full)
