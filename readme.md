@@ -12,7 +12,9 @@ Travel Agency est une application Web écrite en Jakarta EE pour la gestion d'un
 
 * Les employés peuvent administrer les offres de voyage (Ajouter/Éditer/Supprimer), les employés et les clients peuvent réserver des offres de voyage.
 
-* Les clients peuvent se créer un compte.
+* Tous les utilisateurs peuvent se créer un compte client.
+
+* Tous les utilisateurs (même ceux sans compte) peuvent voir la liste des offres.
 
 * L'application contrôle s'il reste des places disponibles et fournit le prix à payer à la suite d'une réservation.
 
